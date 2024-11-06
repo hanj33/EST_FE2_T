@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코드확인용</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <div class="container">
+        <h1 class="ir">테스트 페이지</h1>
+        <section>
+          <h2 class="section-title">섹션제목</h2>
+          <img class="section-img" src="" alt="섹션이미지" />
+          <p class="section-contents">내용</p>
+        </section>
+      </div> -->
+    <script>
+      const root = document.querySelector("#root");
+      const divAdd = document.createElement("div");
+      const h1 = document.createElement("h1");
+      const section = document.createElement("section");
+      const h2 = document.createElement("h2");
+      const img = document.createElement("img");
+      const p = document.createElement("p");
+
+      root.append(divAdd, section);
+      divAdd.classList.add("container");
+      divAdd.textContent = "테스트 페이지";
+
+      section.append(h2, img, p);
+      h2.classList.add("section-title");
+      h2.textContent = "섹션제목";
+      img.classList.add("section-img");
+      img.setAttribute("src", "img.jpg");
+      img.setAttribute("alt", "섹션 이미지");
+      p.classList.add("section-contents");
+      p.textContent = "내용";
+
+      //       function sum(text) {
+      //         const text2 = "abcde1abc12abb"
+      //           .split("")
+      //           .filter(function (elem) {
+      //             return !isNaN(elem);
+      //           })
+      //           .map((i) => Number(i))
+      //           .reduce((a, b) => a + b);
+
+      //         return text2;
+      //       }
+    </script>
+  </body>
+</html>
